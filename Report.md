@@ -34,14 +34,15 @@ TIMEOUT=1000            # limit on max number of steps in each episode
 # Model Architecture
 In contrast to the DDPG paper implementation of the agent, the model architecture of the neural network used here is as follows (defined in _model.py_)
 ```
-### Actor
+Actor
 FC1                 : 256 output units
 FC2                 : 128 output units
 FC3 (output layer)  : 4 ouput units
 
 The outputs of FC1 and FC2 were fed to ReLU activation units.
 ```
-### Critic
+```
+Critic
 FC1                 : 256 output units
 FC2                 : 128 output units
 FC3 (output layer)  : 1 ouput unit
@@ -52,8 +53,9 @@ Actions were added only in FC2
 
 # Weigth Initialization
 In accordance with the DDPG paper, 
-- The final layer weights and biases of both the actor and critic were initialized from a uniform distribution [−3 × 10−3, 3 × 10−3] and [3 × 10−4, 3 × 10−4] for the low dimensional and pixel cases respectively. This was to ensure the initial outputs for the policy and value estimates were near zero. 
-- The other layers were initialized from uniform distributions[− 1/√f, 1/√f] where f is the fan-in of the layer.
+The final layer weights and biases of both the actor and critic were initialized from a uniform distribution [−3 × 10−3, 3 × 10−3] and [3 × 10−4, 3 × 10−4] for the low dimensional and pixel cases respectively. This was to ensure the initial outputs for the policy and value estimates were near zero. 
+
+The other layers were initialized from uniform distributions[− 1/√f, 1/√f] where f is the fan-in of the layer.
 
 # Training Results
 The solution criteria used for training was an average score of 30.0 over 100 consecutive episodes.
