@@ -60,7 +60,7 @@ The other layers were initialized from uniform distributions[− 1/√f, 1/√f]
 # Training Results
 The solution criteria used for training was an average score of 30.0 over 100 consecutive episodes.
 
-The agent took about 300 episodes to solve the environment.
+The agent took about 250 episodes to solve the environment.
 
 The average training scores of the agent:
 ![Average Training Scores of the Agent](/LearningCurve.png)
