@@ -2,7 +2,7 @@
 Continuous Control Project as part of the Deep Reinforcement Learning Nanodegree at Udacity
 
 # Introduction
-The project aims to solve an environment similar to the Banana Collection Unity environment employing Value-Based Methods for Deep Reinforcement Learning. The objective is to train an agent which can navigate a large square world collecting yellow bananas while avoiding blue ones.
+The project aims to solve an environment similar to the Tennis Unity environment employing Policy-Based Methods for Deep Reinforcement Learning. The objective is to train a robotic arm which can follow a continuously moving target.
 
 # Getting Started
 Follow this [link](https://github.com/udacity/deep-reinforcement-learning#dependencies) to setup the Udacity DRLND conda enviroment.
