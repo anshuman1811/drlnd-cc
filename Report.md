@@ -1,10 +1,6 @@
 # Learning Algorithm
 
-The algorithm used for the implementation was a **Deep Q-network** based on the [DeepMind paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf).
-
-An enhancement over the approach of the paper was to do a soft update of the target network parameters through an extra hyperparameter _TAU_. This adds stability to the training.
-
-Epsilon-Greedy policy was used for action selection.
+The algorithm used for the implementation was a **Deep Deterministic Policy Gradients** based on the [DeepMind paper](https://arxiv.org/pdf/1509.02971.pdf).
 
 ## Hyperparameters
 ### Agent Hyperparameters
